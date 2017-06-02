@@ -1,0 +1,22 @@
+{{!-- The following component displays Ember's default welcome message. --}}
+{{link-to 'Home' 'index'}}
+{{link-to 'Test' 'test'}}
+{{link-to 'About' 'about'}}
+
+{{#link-to 'about'}} History {{/link-to}}
+{{outlet}}
+
+<br/>X-Alert :  action method passed from controller to component
+{{x-alert handleClick=(action 'doAlert') message='Pass by father'}}
+{{x-alert handleClick=(action 'doAlert') message='Second one'}}
+
+
+{{#if showName}} showName is true {{else}} showName is False ! {{name}}
+{{/if}}<br/>
+
+{{!-- Feel free to remove this! --}}
+<button {{ action 'toggleName' }}>Toggle Name</button>
+
+<br/>
+{{numClicks}} Clicks
+<button {{ action 'incrementClicks' }}>Clicks</button>

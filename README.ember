@@ -1,0 +1,49 @@
+start with : ember server
+
+ember g controller application
+   app/controller/application.js
+   app/templates/application.hbs
+
+ember g route about
+  create app\routes\about.js
+  create app\templates\about.hbs
+
+ember g route todos
+  create app\routes\todos.js
+  create app\templates\todos.hbs
+
+ember generate route todos/show
+  create app\routes\todos\show.js
+  create app\templates\todos\show.hbs
+
+ember g component x-counter
+  create app\components\x-counter.js
+  create app\templates\components\x-counter.hbs
+
+ember g component x-alert
+  create app\components\x-alert.js
+  create app\templates\components\x-alert.hbs
+
+ember g route index
+  create app\routes\index.js
+  create app\templates\index.hbs
+
+Add Chrome extension : Ember Inspector
+
+https://egghead.io/lessons/javascript-debug-ember-applications-using-ember-inspector
+
+ember g controller tests
+installing controller
+  create app\controllers\tests.js
+installing controller-test
+  create tests\unit\controllers\tests-test.js
+
+ember install ember-one-way-controls
+ember install ember-route-action-helper
+
+ember g controller more_test
+installing controller
+  create app\controllers\more-test.js
+installing controller-test
+  create tests\unit\controllers\more-test-test.js
+  
